@@ -1,0 +1,37 @@
+body { background-color:#e7e2e2;
+color: rgb(255, 255, 255);
+}
+
+.head{display: flex;
+    justify-content: center; 
+    align-items: center;}
+
+.forms { width:3000px;
+	height: 150px;
+	background:rgb(0, 0, 0);
+}
+
+.me {color: rgb(0, 0, 0);
+	font-family: Helvetica;
+}
+
+.carre {display: flex;
+    justify-content:center; 
+    align-items:center;}
+
+.positioned {width  : 300px;
+	height : 200px;
+	background : rgb(212, 212, 212);
+	position: relative;
+	top: 100px;
+	left: -200px;
+}   
+
+.carre2exp {width  : 300px;
+	height : 200px;
+	background : rgb(212, 212, 212);
+	position: relative;
+	top: -115px;
+	left: 200px;
+}   
+
