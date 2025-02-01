@@ -1,90 +1,60 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body >
-        <section>
-            <div class="head">  
-             <div class="nav_bar">
-                <nav >
-                    <ul>
-                            <li><a href="#A_propos" >A propos</a></li>
-                            <li><a href="#Compétence" >Compétence</a></li>
-                            <li><a href="#Exp_pro" >Expériences</a></li>
-                            <li><a href="#Contact" >Contact</a></li>
-                    </ul>
-                 </nav>
-                    </div>
-                <div class="forms",style="position:absolute;z-index:1">
-                    <!-- “Designed by Freepik”-->
-                    <img
-                    src="Desk.jpg" 
-                    width="1950"
-                    height="1000" />    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+        </style>
+
+     <title>Mon portfolio</title>
+</head>
+<body>
+    <header class="header nav" id="header">
+        <nav class="nav about_container">
+            <div class="nav_menu"  id="nav_button">
+                <ul class="nav_list" id="nav_style">
+                    <li class="nav_item"><a href="about" class="nav_link">A Propos de moi</a></li>
+                    <li class="nav_item"><a href="skills" class="nav_link">Compétence</a></li>
+                    <li class="nav_item"><a href="parcour" class="nav_link">Parcours</a></li>
+                    <li class="nav_item"><a href="project" class="nav_link">Projet</a></li>
+                    <li class="nav_item"><a href="contact" class="nav_link">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        
+    </header>
+<main>
+    <section class="about section" id="about">
+        <div class="about_container">
+            <div class="about_data">
+            <span>Bonjour, je suis</span>
+            <h1>DIEBOLT Maxime</h1>
+            <h4>Etudiant en BTS informatique</h3>
+            <p>Je suis actuellement en première années de BTS Services Informatique au Organisation (SIO) au lycée René Cassin à Strasbourg.<br>
+                J'ai 18 ans, pationné par l'informatique depuis longtemps, je mais maintenant mon rêve en pratique<br> et je suis toujours à la recherche de nouvelles opportunité pour apprendre.
+                <div class="about_cv">
+                    <a href="CV_Portfolio_Maxime.pdf" download="CV_Portfolio_Maxime.pdf">Mon CV</a>
                 </div>
-                <div class="text" style="position:absolute;top: 350px; width: 1900px; height:400px; z-index:2;font-size:200%">
-                    <p style="font-size: 40px;">Portfolio de Diebolt Maxime</p>
-                  </div>
-            </div> 
-        </section>    
-        <br>
-    
-        <!--A propos de moi -->
-        <div class="me">
-            <div class="corps">
-             
-        <section id="A_propos">
-            <div class="A_propos">
-                <h2>A propos de moi</h2>
-                <p>Je suis un étudiant de 18 ans en premiere années, actuellement en BAC+2 au lycée René Cassin à Strasbourg<br>J'y suis la formation « Servive informatique au organisations »</p>
+        
+            </p>
             </div>
-        </section>
-        <section id="Compétence">
-            <div class="Compétence">
-                <h2>Compétence</h2>
-                <h3>Développement</h3>
-                
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>Javascript</li>
-                    <li>phyton</li>
-                
-                <h3>Réseaux</h3>
-                <li>Adressage réseau et dépannage de base CISCO</li>
-                <h3>Cybersécurité</h3> 
-                <li>RGPD CNIL</li>
-                <li>RGPD ANSSI</li>
-            </div>
-        </section>
-        <section id="Exp_pro">
-            <div class="carre">
-                <div class="Exp_pro">
-                    <h2>Expériences profesionnelles</h2>
-                    <div class="positioned">
-                    <p>Stage du 11/03/24 au 05/04/24 et du 29/11/21 au 17/12/21 </p>
-                    <p><a href="https://www.tryba.com/" style="color: rgb(12, 42, 92);">Tryba</a>-Gundershoffen</p>
-                    <p>-Préparation de client léger</p>
-                    <p>-Installations de client léger</p>
-                    <p>-intervention dans l'usine</p>
-                    </div>
-                    <div class="carre2exp">
-                        <p>Stage du 25/09/23 au 20/10/23 et du 05/06/23 au 30/06/23</p>
-                        <p><a href="https://www.imd-informatique.com/" style="color: rgb(12, 42, 92);">Imd informatique</a>-obernai</p>
-                        <p>Réparations d'ordinateur(fixe ou portable)</p>
-                        <p>-Réparations d'imprimante</p>
-                        <p>Préparations à la vente de pc(installations d'OS,pack office...etc)</p>
-                    </div>    
-                </div>
-            </div>
-        </section>
-        <section id="Contact">
-            <div class="Me_contacter">
-                <h2>Contact</h2>
-                <p>Vous pouvez me contacter via ce mail:<strong>maxime.diebolt1205@gmail.com</strong></p>
+            <div class="about_social"></div>
         </div>
-        </section> 
-    </div>
-    </div>
-    </body>
-</html>         
+        
+    </section>
+    <section  class="skills section" id="skills">
+        <div class="skill_container">
+            <div class="skill_text">
+                <h3>Mes compétences</h3>
+            </div>
+        </div>
+    </section>
+    <section   class="parcour section" id="parcour"></section>
+    <section   class="project section" id="project"></section>
+    <section  class="contact section"  id="contact"></section>
+</main>
+</body>
+
+</html>
