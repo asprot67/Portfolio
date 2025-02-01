@@ -28,5 +28,20 @@ body{
     text-decoration: none;
     font-weight: 500;}
 
+.about_cv {
+    margin-top: 20px;
+    text-align: center;
+}
 
-    
+    .about_cv a {
+        display: inline-flex; 
+        justify-content: center;
+        background: #643c6e; 
+        color: azure;
+        padding: 12px 20px;
+        border-radius: 30px;
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: bold;
+        
+    }
