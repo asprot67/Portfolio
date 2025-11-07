@@ -13,37 +13,29 @@ type Projet = {
 const projets: Projet[] = [
   {
     id: "p1",
-    titre: "Projet 1",
+    titre: "Portfolio Personnel",
     image: "/images/todo.png",
     description:
-      "Test",
+      "Présentation de mon parcours, compétences et projets réalisés en développement.",
     missions: [
       "Test"
     ],
-    technologies: []
+    technologies: ["React", "TypeScript", "CSS"]
   },
   {
     id: "p2",
-    titre: "Projet 2",
+    titre: "Gestionnaire de rdv",
     image: "/images/vitrine.png",
     description:
-      "Test",
+      "Creation d'une application de gestion de rendez-vous pour un projet scolaire.",
     missions: [
-      "Test"
+      "Interface utilisateur pour la prise de rendez-vous",
+      "Base de données pour stocker les rendez-vous",
+      "Fonctionnalités de gestion des rendez-vous"
     ],
-    technologies: []
+    technologies: ["Python","Sqlite" ]
   },
-  {
-    id: "p3",
-    titre: "Projet 3",
-    image: "/images/api.png",
-    description:
-      "Test",
-    missions: [
-      "Test"
-    ],
-    technologies: []
-  }
+  
 ];
 
 export default function Projet() {

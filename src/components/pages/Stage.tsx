@@ -19,7 +19,7 @@ const stages: Stage[] = [
   {
     id: "stage-bts2",
     entreprise: "Mairie de Haguenau",
-    logo: "/images/stages/logoHAG.png",
+    logo: "./images/stages/logoHAG.png",
     titre: "Stage Dev Web - Mairie Haguenau",
     duree: "A venir ",
     periode: "A venir",
@@ -34,7 +34,7 @@ const stages: Stage[] = [
   {
     id: "stage-bts1",
     entreprise: "Société Alscaienne de Ramonage",
-    logo: "/images/stages/logoSAR.jpg",
+    logo: "./images/stages/logoSAR.jpg",
     titre: "Stage Dev App - Société Alscaienne de Ramonag",
     duree: "5 semaines",
     periode: "Juin - Juillet 2025",
@@ -52,7 +52,7 @@ const stages: Stage[] = [
   {
     id: "stage-bp2",
     entreprise: "Tryba",
-    logo: "/images/stages/logoTryba.png",
+    logo: "./images/stages/logoTryba.png",
     titre: "Stage Technicien informatique - Tryba",
     duree: "7 semaines",
     periode: "Mars - Avril 2021",
@@ -69,7 +69,7 @@ const stages: Stage[] = [
   {
     id: "stage-bp1",
     entreprise: "IMD informatique",
-    logo: "/images/stages/logoIMD.svg",
+    logo: "./images/stages/logoIMD.svg",
     titre: "Stage réparateur informatique",
     duree: "8 semaines",
     periode: "Novembre - Décembre 2021",
