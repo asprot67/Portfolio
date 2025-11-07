@@ -1,0 +1,75 @@
+/* ====== PAGE D’ACCUEIL ====== */
+
+#home {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  color: #222;
+}
+
+/* TITRES PRINCIPAUX */
+#home h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+#home h1 span {
+  color:#DA667B; /* bleu léger, modifiable */
+}
+
+/* SOUS-TITRES */
+#home h2 {
+  font-size: 1.4rem;
+  margin-top: 40px;
+  border-bottom: 2px solid #DA667B;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+/* PARAGRAPHES */
+#home p {
+  margin-bottom: 15px;
+  text-align: justify;
+}
+
+/* LISTES */
+#home ul {
+  list-style: disc inside;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+#home li {
+  margin-bottom: 8px;
+}
+
+/* SECTION CONTACT */
+#contact {
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 1px solid #ddd;
+  text-align: center;
+}
+
+#contact p {
+  margin-top: 10px;
+}
+
+/* PETITE ADAPTATION MOBILE */
+@media (max-width: 600px) {
+  #home {
+    padding: 20px 10px;
+  }
+
+  #home h1 {
+    font-size: 1.6rem;
+  }
+
+  #home h2 {
+    font-size: 1.2rem;
+  }
+}

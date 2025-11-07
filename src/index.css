@@ -1,0 +1,48 @@
+:root {
+  --c-bg-dark:   #021024;
+  --c-bg-nav:    #052659;
+  --c-primary:   #5483B3;
+  --c-soft:      #7DA0C4;
+  --c-bg-light:  #C1E8FF;
+  --c-text-light: #F5F7FA;
+  --c-text-dark:  #0F161F;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #F1E0C5;
+  color: var(--c-text-dark);
+  font-family: system-ui, sans-serif;
+}
+
+
+.section {
+  padding: 3rem 1rem;
+}
+
+.card {
+  background: white;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  border: 1px solid var(--c-soft);
+}
+
+footer {
+  background: var(--c-bg-dark);
+  color: var(--c-soft);
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+main {
+  flex: 1; /* pousse le footer en bas */
+}
+
+
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
