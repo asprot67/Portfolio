@@ -66,3 +66,35 @@
 .nav-links a:hover {
   color: #DA667B;                   /* navbar-hover */
 }
+
+@media (max-width: 768px) {
+
+  .nav {
+    flex-wrap: wrap;
+  }
+
+  .nav-links {
+    display: none; /* caché par défaut */
+    flex-direction: column;
+    width: 100%;
+    background: #342A21;
+    margin-top: 0.5rem;
+    padding: 1rem 0;
+  }
+
+  .nav-links.open {
+    display: flex; /* affiché quand ouvert */
+  }
+
+  .nav-links li {
+    text-align: center;
+    padding: 0.75rem 0;
+  }
+
+  .burger {
+    display: block;
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: #F1E0C5;
+  }
+}
