@@ -2,3 +2,48 @@ body {
     margin: 80px;
 
 }
+
+.rss-list {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.rss-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 1.2rem 1rem 1.2rem 1.5rem; /* espace à gauche pour le trait */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  border-left: 4px solid #000; /* <-- trait noir à gauche */
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.rss-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.12);
+}
+
+.rss-title {
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #1a1a1a;
+  text-decoration: none;
+}
+
+.rss-title:hover {
+  text-decoration: underline;
+}
+
+.rss-date {
+  font-size: 0.8rem;
+  color: #666;
+  margin: 0.3rem 0;
+}
+
+.rss-description {
+  font-size: 0.95rem;
+  color: #333;
+}
+

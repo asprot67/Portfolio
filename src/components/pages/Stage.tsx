@@ -21,14 +21,16 @@ const stages: Stage[] = [
     entreprise: "Mairie de Haguenau",
     logo: "/images/stages/logoHAG.png",
     titre: "Stage Dev Web - Mairie Haguenau",
-    duree: "A venir ",
-    periode: "A venir",
+    duree: "5 semaines",
+    periode: "Janvier - Février 2026",
     description:
-      "N/A",
+      "Developpement d'une web app pour la gestion des reservation de materiels",
     missions: [
-      "N/A"
+      "Conception de l'architecture de l'application",
+      "Développement des fonctionnalités principales",
+      "Tests et corrections de bugs"
     ],
-    technologies: [],
+    technologies: ["PHP", "CodeIgniter4", "MySQL", "HTML/CSS", "JavaScript"],
     categorie: "BTS"
   },
   {
