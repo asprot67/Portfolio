@@ -5,6 +5,26 @@
   text-align: center;
   padding-top: 80px;
 }
+/* Supprime les marges par défaut du navigateur qui créent des bandes blanches */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* L'application prend toute la hauteur de l'écran */
+  width: 100%;       /* S'assure de prendre toute la largeur */
+}
+
+.content {
+  flex: 1;           /* CEUX-CI est crucial : il pousse le footer vers le bas */
+  width: 100%;
+  margin-top: 80px;  /* Ajuste selon la hauteur de ta Navbar pour ne pas cacher le texte */
+  box-sizing: border-box;
+}
 
 .logo {
   height: 6em;

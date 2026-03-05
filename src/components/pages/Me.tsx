@@ -73,7 +73,7 @@ export default function APropos() {
           <li>Frameworks : React , Codeigniter4</li>
           <li>Bases de données : MySQL, SQLite</li>
           <li>Outils : Git, GitHub, Visual Studio Code</li>
-          <li>ERP : GLPI</li>
+          <li>Gestionnaire informatique : GLPI</li>
         </ul>
       </div>
 

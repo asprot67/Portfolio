@@ -35,9 +35,9 @@ const stages: Stage[] = [
   },
   {
     id: "stage-bts1",
-    entreprise: "Société Alscaienne de Ramonage",
+    entreprise: "Société Alsacienne de Ramonage",
     logo: "/images/stages/logoSAR.jpg",
-    titre: "Stage Dev App - Société Alscaienne de Ramonag",
+    titre: "Stage Dev App - Société Alsacienne de Ramonage",
     duree: "5 semaines",
     periode: "Juin - Juillet 2025",
     description:

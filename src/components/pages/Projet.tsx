@@ -13,25 +13,28 @@ type Projet = {
 const projets: Projet[] = [
   {
     id: "p1",
-    titre: "Projet 1",
+    titre: "Portflio",
     image: "/images/todo.png",
     description:
-      "Test",
+      "Création de mon portfolio personnel pour présenter mes compétences, mes expériences et mes projets. Le site est conçu pour être moderne, responsive et facile à naviguer.",
     missions: [
       "Test"
     ],
-    technologies: []
+    technologies: ['React', 'TypeScript', 'CSS']
   },
   {
     id: "p2",
-    titre: "Projet 2",
+    titre: "Projet BTS : Suivie de plainte interne",
     image: "/images/vitrine.png",
     description:
-      "Test",
+      "Application web permettant de suivre les plaintes internes d'une entreprise.",
     missions: [
-      "Test"
+      "Depot de plainte",
+      "Suivie de l'état de la plainte",
+      "Gestion des utilisateurs",
+      "Système messagerie interne"
     ],
-    technologies: []
+    technologies: ['PHP','HTML','CSS','JavaScript']
   },
   {
     id: "p3",
