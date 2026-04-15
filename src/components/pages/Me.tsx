@@ -70,9 +70,10 @@ export default function APropos() {
         <h3>Mes compétences</h3>
         <ul>
           <li>Langages : HTML, CSS, JavaScript, PHP, Java</li>
-          <li>Frameworks : React</li>
-          <li>Bases de données : MySQL, </li>
+          <li>Frameworks : React , Codeigniter4</li>
+          <li>Bases de données : MySQL, SQLite</li>
           <li>Outils : Git, GitHub, Visual Studio Code</li>
+          <li>Gestionnaire informatique : GLPI</li>
         </ul>
       </div>
 

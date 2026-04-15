@@ -1,48 +1,53 @@
 :root {
-  --c-bg-dark:   #021024;
-  --c-bg-nav:    #052659;
-  --c-primary:   #5483B3;
-  --c-soft:      #7DA0C4;
-  --c-bg-light:  #C1E8FF;
-  --c-text-light: #F5F7FA;
-  --c-text-dark:  #0F161F;
+  /* On utilise un beige très pâle pour le fond pour faire ressortir le blanc */
+  --bg-page:    #F4F1EA;      /* Un "sable" très clair */
+  --bg-card:    #FFFFFF;      /* Le blanc pur est réservé aux éléments importants */
+  --text-main:  #1A1A1A;
+  --border-soft: #E2DDD3;     /* Une bordure qui rappelle la couleur du fond */
+  --accent-color: #8B7E66;    /* Un taupe élégant pour le relief */
 }
-
-body {
+/* Supprime les marges par défaut du navigateur qui créent des bandes blanches */
+html, body {
   margin: 0;
   padding: 0;
-  background: #F1E0C5;
-  color: var(--c-text-dark);
-  font-family: system-ui, sans-serif;
+  height: 100%;
 }
-
-
-.section {
-  padding: 3rem 1rem;
-}
-
-.card {
-  background: white;
-  border-radius: 8px;
-  padding: 1.5rem;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-  border: 1px solid var(--c-soft);
-}
-
-footer {
-  background: var(--c-bg-dark);
-  color: var(--c-soft);
-  text-align: center;
-  padding: 2rem 1rem;
-}
-
-main {
-  flex: 1; /* pousse le footer en bas */
-}
-
 
 .app {
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
+  min-height: 100vh; /* L'application prend toute la hauteur de l'écran */
+  width: 100%;       /* S'assure de prendre toute la largeur */
+}
+
+body {
+  margin: 0;
+  background-color: var(--bg-page); /* Le fond n'est plus blanc */
+  color: var(--text-main);
+  font-family: 'Inter', system-ui, sans-serif;
+}
+
+.card {
+  background: var(--bg-card); /* La carte, elle, reste blanche */
+  border-radius: 12px;
+  padding: 2rem;
+  
+  /* LE SECRET : Une ombre douce au lieu d'une bordure noire */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  
+  /* Une bordure très fine pour bien délimiter */
+  border: 1px solid var(--border-soft);
+  
+  margin-bottom: 1.5rem;
+}
+
+/* On ajoute un petit détail sur le côté pour donner du caractère sans alourdir */
+.card::before {
+  content: "";
+  display: block;
+  width: 4px;
+  height: 20px;
+  background: var(--accent-color);
+  margin-bottom: 1rem;
+  border-radius: 2px;
 }

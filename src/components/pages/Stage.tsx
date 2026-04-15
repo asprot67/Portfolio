@@ -4,7 +4,6 @@ import "../styles/Stage.css";
 type Stage = {
   id: string;
   entreprise: string;
-  logo: string;
   titre: string;
   duree: string;
   periode: string;
@@ -19,23 +18,24 @@ const stages: Stage[] = [
   {
     id: "stage-bts2",
     entreprise: "Mairie de Haguenau",
-    logo: "./images/stages/logoHAG.png",
     titre: "Stage Dev Web - Mairie Haguenau",
-    duree: "A venir ",
-    periode: "A venir",
+    duree: "5 semaines",
+    periode: "Janvier - Février 2026",
     description:
-      "N/A",
+      "Developpement d'une web app pour la gestion des reservation de materiels",
     missions: [
-      "N/A"
+      "Conception de l'architecture de l'application",
+      "Développement des fonctionnalités principales",
+      "Tests et corrections de bugs"
     ],
-    technologies: [],
+    technologies: ["PHP", "CodeIgniter4", "MySQL", "HTML/CSS", "JavaScript"],
     categorie: "BTS"
   },
   {
     id: "stage-bts1",
-    entreprise: "Société Alscaienne de Ramonage",
-    logo: "./images/stages/logoSAR.jpg",
-    titre: "Stage Dev App - Société Alscaienne de Ramonag",
+
+    entreprise: "Société Alsacienne de Ramonage",
+    titre: "Stage Dev App - Société Alsacienne de Ramonage",
     duree: "5 semaines",
     periode: "Juin - Juillet 2025",
     description:
@@ -52,7 +52,6 @@ const stages: Stage[] = [
   {
     id: "stage-bp2",
     entreprise: "Tryba",
-    logo: "./images/stages/logoTryba.png",
     titre: "Stage Technicien informatique - Tryba",
     duree: "7 semaines",
     periode: "Mars - Avril 2021",
@@ -69,7 +68,6 @@ const stages: Stage[] = [
   {
     id: "stage-bp1",
     entreprise: "IMD informatique",
-    logo: "./images/stages/logoIMD.svg",
     titre: "Stage réparateur informatique",
     duree: "8 semaines",
     periode: "Novembre - Décembre 2021",
@@ -103,7 +101,6 @@ export default function Stage() {
           className={`stage-card ${activeId === stage.id ? "open" : ""}`}
           onClick={() => toggleActive(stage.id)}
         >
-          <img src={stage.logo} alt={stage.entreprise} className="stage-logo" />
           <h3>{stage.titre}</h3>
           <p className="stage-periode">
             {stage.periode} — {stage.duree}

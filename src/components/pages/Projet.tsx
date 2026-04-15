@@ -10,30 +10,34 @@ type Projet = {
   technologies: string[];
 };
 
+const baseUrl = import.meta.env.BASE_URL || '/';
+
 const projets: Projet[] = [
   {
     id: "p1",
-    titre: "Portfolio Personnel",
-    image: "/images/todo.png",
+    titre: "Portflio",
+    image: `${baseUrl}images/projet/portfolio.png`,
     description:
-      "Présentation de mon parcours, compétences et projets réalisés en développement.",
+      "Création de mon portfolio personnel pour présenter mes compétences, mes expériences et mes projets. Le site est conçu pour être moderne, responsive et facile à naviguer.",
     missions: [
-      "Test"
+      "Présentation de mes compétences et expériences",
     ],
-    technologies: ["React", "TypeScript", "CSS"]
+    technologies: ['React', 'TypeScript', 'CSS']
   },
   {
     id: "p2",
-    titre: "Gestionnaire de rdv",
-    image: "/images/vitrine.png",
+    titre: "Projet BTS : Suivie de plainte interne",
+    image: `${baseUrl}images/projet/suivie_plainte.png`,
     description:
-      "Creation d'une application de gestion de rendez-vous pour un projet scolaire.",
+      "Application web permettant de faire des dépôts de plaintes internes (anonyme ou non anonyme) et d'avoir un suivi en tant que signaleurs . Web App présenté lors d'une de mes épreuve du BTS et continuer de mon coté pour l'améliorer. Développement en cours.",
+      
     missions: [
-      "Interface utilisateur pour la prise de rendez-vous",
-      "Base de données pour stocker les rendez-vous",
-      "Fonctionnalités de gestion des rendez-vous"
+      "Depot de plainte",
+      "Suivie de l'état de la plainte",
+      "Gestion des utilisateurs",
+      "Système messagerie interne"
     ],
-    technologies: ["Python","Sqlite" ]
+    technologies: ['PHP','HTML','CSS','JavaScript']
   },
   
 ];

@@ -1,68 +1,120 @@
+:root {
+  --nav-bg:     #1A1C1E;    /* Anthracite profond */
+  --nav-text:   #F4F1EA;    /* Sable clair */
+  --nav-accent: #D4A373;    /* Terre cuite / Doré */
+}
+
 .nav-header {
   position: fixed;
   top: 0; left: 0; right: 0;
-  background: #342A21;
-  color: #F1E0C5;
-  z-index: 100;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.25);
-}
-
-.nav-logo {
-  cursor: pointer;
-}
-
-.nav-links li {
-  list-style: none;
-  cursor: pointer;
-  padding: 0.5rem 0.5rem;
-  transition: border-color .25s;
-}
-
-.nav-links li.active {
-  border-bottom: 2px solid currentColor; /* trait sous le texte */
-}
-
-.nav-links li:hover {
-  opacity: 0.8;
-}
-
-.nav a {
-  color:#F1E0C5;
-  text-decoration: none;
-  transition: color .2s ease;
-}
-
-.nav a:hover {
-  color: #DA667B
+  background: var(--nav-bg);
+  color: var(--nav-text);
+  z-index: 1000;
+  border-bottom: 2px solid var(--nav-accent);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
 .nav {
-  max-width: 900px;
+  max-width: 1000px;
   margin: 0 auto;
-  padding: 0.5rem;
+  padding: 0.8rem 1.5rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
 .nav-logo {
-  font-weight: 700;
-  font-size: 1.2rem;
-  color: #ffffff;                   /* navbar-text */
+  font-weight: 800;
+  font-size: 1.4rem;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  margin: 0;
 }
 
 .nav-links {
   list-style: none;
   display: flex;
   gap: 1.5rem;
+  margin: 0;
+  padding: 0;
 }
 
-.nav-links a {
-  text-decoration: none;
-  color: #ffffff;                   /* navbar-text */
-  transition: color .2s;
+/* Style des éléments du menu */
+.nav-links li {
+  cursor: pointer;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  opacity: 0.7;
+  padding: 0.5rem 0;
+  position: relative;
 }
 
-.nav-links a:hover {
-  color: #DA667B;                   /* navbar-hover */
+.nav-links li:hover {
+  opacity: 1;
+  color: var(--nav-accent);
+}
+
+/* État Actif : soulignement élégant */
+.nav-links li.active {
+  opacity: 1;
+  color: var(--nav-accent);
+}
+
+.nav-links li.active::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: var(--nav-accent);
+}
+
+/* Burger Menu (Caché sur desktop) */
+.burger {
+  display: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+/* --- Responsive Mobile --- */
+@media (max-width: 850px) {
+  .burger {
+    display: block;
+  }
+
+  .nav-links {
+    display: none; /* Caché par défaut */
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    background: var(--nav-bg);
+    padding: 1rem 0;
+    gap: 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .nav-links.open {
+    display: flex; /* Apparaît quand on clique sur le burger */
+  }
+
+  .nav-links li {
+    text-align: center;
+    padding: 1.2rem 0;
+    width: 100%;
+  }
+
+  .nav-links li.active::after {
+    display: none; /* On enlève la barre en mobile pour un look plus propre */
+  }
+  
+  .nav-links li.active {
+    background: rgba(212, 163, 115, 0.1); /* Léger fond sur l'élément actif en mobile */
+  }
 }
