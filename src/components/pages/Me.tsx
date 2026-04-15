@@ -69,8 +69,8 @@ export default function APropos() {
       <div className="competences">
         <h3>Mes compétences</h3>
         <ul>
-          <li>Langages : HTML, CSS, JavaScript, PHP, Java</li>
-          <li>Frameworks : React , Codeigniter4</li>
+          <li>Langages : HTML, CSS, JavaScript, PHP, Java, Kotlin, VBA, React </li>
+          <li>Frameworks : Codeigniter4</li>
           <li>Bases de données : MySQL, SQLite</li>
           <li>Outils : Git, GitHub, Visual Studio Code</li>
           <li>Gestionnaire informatique : GLPI</li>

@@ -3,7 +3,6 @@ import "../styles/Home.css";
 function Home() {
   return (
     <section id="home">
-      <p>v0.5 du site</p>
   <h1>Bonjour, Je suis <span>Maxime Diebolt </span></h1>
 
   <p>
