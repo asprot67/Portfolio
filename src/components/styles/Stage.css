@@ -3,14 +3,14 @@
   margin: 0 auto;
   padding: 40px 20px;
   font-family: Arial, Helvetica, sans-serif;
-  color: #222;
+  color: #1A1A1A;
   line-height: 1.6;
 }
 
 #stages h2 {
   text-align: center;
   margin-bottom: 30px;
-  border-bottom: 2px solid #007acc;
+  border-bottom: 2px solid #8B7E66;
   display: inline-block;
   padding-bottom: 5px;
 }
@@ -20,35 +20,37 @@
 }
 
 .categorie h3 {
-  color: #007acc;
-  border-left: 4px solid #007acc;
+  color: #000000;
+  border-left: 4px solid #8B7E66;
   padding-left: 10px;
   margin-bottom: 20px;
 }
 
-/* Liste des stages */
+/* Liste */
 .stage-list {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
 
-/* Carte de stage */
+/* Carte */
 .stage-card {
-  border: 1px solid #ddd;
+  border: 1px solid #E2DDD3;
   border-radius: 12px;
-  background: #f9f9f9;
+  background: #FFFFFF;
   padding: 20px;
   text-align: center;
   cursor: pointer;
-  transition: transform 0.3s ease, background 0.3s ease;
+  transition: transform 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
 }
 
 .stage-card:hover {
-  background: #f0f8ff;
+  background: #ffffff;
   transform: translateY(-4px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
 }
 
+/* Logo */
 .stage-logo {
   width: 100px;
   height: 100px;
@@ -56,13 +58,14 @@
   margin-bottom: 10px;
 }
 
+/* Période */
 .stage-periode {
-  color: #555;
+  color: #6b6b6b;
   font-style: italic;
   margin-bottom: 10px;
 }
 
-/* Détails du stage */
+/* Détails */
 .stage-details {
   max-height: 0;
   opacity: 0;
@@ -82,15 +85,17 @@
 
 .stage-details h4 {
   margin: 10px 0 5px;
-  color: #007acc;
+  color: #8B7E66;
 }
 
+/* Liste */
 .stage-details ul {
   text-align: left;
   list-style: disc inside;
   margin-bottom: 10px;
 }
 
+/* Technologies */
 .technologies {
   display: flex;
   flex-wrap: wrap;
@@ -100,8 +105,8 @@
 }
 
 .tech {
-  background: #007acc;
-  color: #fff;
+  background: #8B7E66;
+  color: #FFFFFF;
   padding: 4px 8px;
   border-radius: 6px;
   font-size: 0.85rem;

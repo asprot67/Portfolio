@@ -4,18 +4,26 @@ function Home() {
   return (
     <section id="home">
   <h1>Bonjour, Je suis <span>Maxime Diebolt </span></h1>
-
+<h2
+  style={{
+    width: "750px",
+    height: "75px",
+    padding: "20px",
+    border: "5px solid #333",
+    margin: "20px",
+    backgroundColor: "#f0f0f0",
+    borderRadius: "10px"
+  }}
+>
+  Recherche d'une alternance pour mon Bachelor concepteur développeur d’applications 3ème année
+</h2>
+<br />
   <p>
     Je suis étudiant en deuxième année de <strong>BTS SIO</strong> (Services Informatiques aux Organisations),
     spécialité développement. Passionné par la programmation, j’aime concevoir des applications modernes, claires
     et efficaces, en mettant l’accent sur l’expérience utilisateur et la qualité du code.
   </p>
 
-  <p>
-    <strong>Mon objectif :</strong> continuer à progresser dans le développement front-end et acquérir de nouvelles
-    compétences pour devenir un développeur complet. J’aime apprendre, relever des défis techniques et travailler
-    sur des projets concrets qui ont du sens.
-  </p>
 
   <section id="skills">
     <h2>Compétences utilisées récemment</h2>

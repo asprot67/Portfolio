@@ -47,15 +47,10 @@ export default function APropos() {
       <h2>À propos de moi</h2>
 
       <div className="intro">
+        
         <p>
-          Je m’appelle <strong>Maxime Diebolt</strong> et je suis actuellement étudiant en
-          <strong> deuxième année de BTS SIO</strong> (Services Informatiques aux Organisations)
-          option <strong>SLAM</strong> (Solutions Logicielles et Applications Métiers).
-        </p>
-
-        <p>
-          Passionné par le développement web, j’aime concevoir des sites et des applications
-          modernes, intuitives et performantes. J’aime apprendre de nouvelles technologies et
+          Passionné par le développement, j’aime concevoir des sites et des applications
+          intuitives et performantes. J’aime apprendre de nouvelles technologies et
           relever des défis techniques.
         </p>
 
